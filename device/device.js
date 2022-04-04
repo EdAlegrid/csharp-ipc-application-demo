@@ -3,7 +3,7 @@
 const net = require('net');
 const { Device } = require('m2m');
 
-const device = new Device(500);
+const device = new Device(400);
 
 device.connect(() => {
 
@@ -11,7 +11,7 @@ device.connect(() => {
 
     let pl = JSON.stringify({type:'random'});
 
-    TcpClient('127.0.0.1', 5300, pl, (err, d) => {
+    TcpClient('127.0.0.1', 5400, pl, (err, d) => {
       if(err) return console.error('TcpClient error:', err.message);
       if(d){
         data.send(d);
