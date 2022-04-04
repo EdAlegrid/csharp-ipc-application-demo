@@ -288,4 +288,6 @@ client.connect(() => {
 ```js
 $ node client.js
 ```
-The client should receive a *json* data with the random value property from the remote C/C++ application.
+The client should receive a *json* data with the random value as shown below.
+
+*rcvd json data: { type: 'random', source: 'C#-server', value: 1605906241 }*
