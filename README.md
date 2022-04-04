@@ -1,9 +1,9 @@
 
 # Monitor Data From A C# App Through IPC
-![](https://raw.githubusercontent.com/EdoLabs/src2/master/csharpAppQuicktour.svg?sanitize=true)
+![](https://raw.githubusercontent.com/EdoLabs/src2/master/csharpQuickTour.svg?sanitize=true)
 [](quicktour.svg)
 
-In this quick tour, the client will watch, attempt to send payload data and capture data from a C# application through inter-process communication (ipc) using *tcp* with the remote device.
+In this quick tour, the client will watch data from a C# application through inter-process communication (ipc) using *tcp* with the remote device.
 
 The client will send a *json* payload data { type:"random", source:"C# server" } to a remote device and should receive a random value from the remote device e.g. { type:"random", source:"C#-server", value: 287798093 };
 
