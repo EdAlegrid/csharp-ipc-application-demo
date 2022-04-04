@@ -1,6 +1,6 @@
 
 # Monitor Data From A C# App Through IPC
-![](https://raw.githubusercontent.com/EdoLabs/src2/master/c#quicktour.svg?sanitize=true)
+![](https://raw.githubusercontent.com/EdoLabs/src2/master/csharpAppQuicktour.svg?sanitize=true)
 [](quicktour.svg)
 
 In this quick tour, the client will watch, attempt to send payload data and capture data from a C# application through inter-process communication (ipc) using *tcp* with the remote device.
