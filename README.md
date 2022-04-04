@@ -1,19 +1,19 @@
 
-## Monitor Data From A Remote C# Application Through IPC
+# Monitor Data From A Remote C# Application Through IPC
 ![](https://raw.githubusercontent.com/EdoLabs/src2/master/c#quicktour.svg?sanitize=true)
 [](quicktour.svg)
 
 In this quick tour, the client will watch, attempt to send payload data and capture data from a C# application through inter-process communication (ipc) using *tcp* with the remote device.
 
-The client will send a *json* payload data { type:"random", source:"C# server" } to a remote device and should receive a random value from the remote device e.g. { type:"random", source:"C# server", value: 287798093 };
+The client will send a *json* payload data { type:"random", source:"C# server" } to a remote device and should receive a random value from the remote device e.g. { type:"random", source:"C#-server", value: 287798093 };
 
-#### Remote Device Setup
+### Remote Device Setup
 
-##### 1. Create a device project directory and install m2m.
+#### 1. Create a device project directory and install m2m.
 ```js
 $ npm install m2m
 ```
-##### 2. Save the code below as device.js in your project directory.
+#### 2. Save the code below as device.js in your project directory.
 ```js
 'use strict';
 
@@ -81,14 +81,14 @@ function TcpClient(ip, port, payload, cb){
   });
 };
 ```
-##### 3. Start your device application.
+#### 3. Start your device application.
 ```js
 $ node device.js
 ```
 
-#### C# Application Server Setup on Remote Device
+### C# Application Server Setup on Remote Device
 
-##### 1. First, download and install the .NET SDK on your computer.
+#### 1. First, download and install the .NET SDK on your computer.
 
 Next, open a terminal such as PowerShell, Command Prompt, or bash. Enter the following dotnet commands to create and run a C# server application:
 ```js
@@ -104,7 +104,7 @@ Hello World!
 
 Navigate through the m2m-c#-server project directory and open the Program.cs file. Later on, we will modify its content from the downloaded github project *csharp-ipc-application-demo*.
 
-##### 2. Download the *csharp-ipc-application-demo* example project.
+#### 2. Download the *csharp-ipc-application-demo* example project.
 ```js
 $ git clone https://github.com/EdAlegrid/csharp-ipc-application-demo.git
 ```
@@ -243,9 +243,9 @@ class MyTcpListener
 }
 ```
 
-##### 3. Copy the Program.cs content as shown above into your m2m-c#-server opened Program.cs file and click save. You need to open the Program.cs file and click save and not just replace it by copying the file. Otherwise it will not detect the changes. 
+#### 3. Copy the Program.cs content as shown above into your m2m-c#-server opened Program.cs file and click save. You need to open the Program.cs file and click save and not just replace it by copying the file. Otherwise it will not detect the changes. 
 
-##### 4. Run again the application. It will recompile and start the application.
+#### 4. Run again the application. It will recompile and start the application.
 ```js
 $ dotnet run --project csharp-server
 ```
@@ -256,13 +256,13 @@ Once the C# Application server is up and running, you should see a server output
 Server listening on: 127.0.0.1:5400
 Waiting for a connection...
 ```
-#### Remote Client Setup
+### Remote Client Setup
 
-##### 1. Create a client project directory and install m2m.
+#### 1. Create a client project directory and install m2m.
 ```js
 $ npm install m2m
 ```
-##### 2. Save the code below as client.js in your client project directory.
+#### 2. Save the code below as client.js in your client project directory.
 ```js
 const { Client } = require('m2m');
 
@@ -282,7 +282,7 @@ client.connect(() => {
 
 });
 ```
-##### 3. Run your client application.
+#### 3. Run your client application.
 ```js
 $ node client.js
 ```
