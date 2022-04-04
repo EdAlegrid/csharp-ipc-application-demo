@@ -245,7 +245,7 @@ class MyTcpListener
 
 #### 3. Copy the downloaded Program.cs content as shown above into your m2m-c#-server Program.cs file and save it. 
 
-You need to open the Program.cs file from m2m-c#-server and click save and not just replace it by copying the file. Otherwise it will not detect the changes. 
+You need to open the Program.cs file from the m2m-c#-server directory and click save, not just replace it by copying the file. Otherwise it will not detect the changes. 
 
 #### 4. Run again the application. It will recompile and start the application.
 ```js
