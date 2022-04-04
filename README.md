@@ -249,7 +249,7 @@ You need to open the Program.cs file from the m2m-c#-server directory and click 
 
 #### 4. Run again the application. It will recompile and start the application.
 ```js
-$ dotnet run --project csharp-server
+$ dotnet run --project m2m-c#-server
 ```
 Once the C# Application server is up and running, you should see a server output as shown below.
 ```js
