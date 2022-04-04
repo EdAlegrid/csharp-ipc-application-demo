@@ -9,7 +9,7 @@ device.connect(() => {
 
   device.setData('ipc-channel', (data) => {
 
-    let pl = JSON.stringify({type:'random'});
+    let pl = JSON.stringify({type:'random', source:'C#-server'});
 
     TcpClient('127.0.0.1', 5400, pl, (err, d) => {
       if(err) return console.error('TcpClient error:', err.message);
