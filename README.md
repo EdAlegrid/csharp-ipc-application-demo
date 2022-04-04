@@ -1,5 +1,5 @@
 
-# Monitor Data From A Remote C# Application Through IPC
+# Monitor Data From A C# App Through IPC
 ![](https://raw.githubusercontent.com/EdoLabs/src2/master/c#quicktour.svg?sanitize=true)
 [](quicktour.svg)
 
