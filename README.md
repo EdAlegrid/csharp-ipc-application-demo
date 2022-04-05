@@ -174,7 +174,7 @@ class MyTcpListener
         
         // Generate a random number.
         Random rnd = new Random();
-        int num = rnd.Next();
+        int num = rnd.Next(0, 100);
 
         Console.WriteLine();
 
