@@ -108,7 +108,7 @@ Navigate through the m2m-c#-server project directory and open the Program.cs fil
 ```js
 $ git clone https://github.com/EdAlegrid/csharp-ipc-application-demo.git
 ```
-Check the *Program.cs* source file inside the *csharp-ipc-application-demo/app* directory as shown below.
+Check the *Program.cs* source file inside the *csharp-ipc-application-demo/app* sub-directory as shown below.
 
 ```js
 /*
