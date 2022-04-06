@@ -71,7 +71,7 @@ class MyTcpListener
             Date = DateTime.Parse("2019-08-01"),
             value = num,
             type = "random",
-            source = "C#-server",
+            source = "cs-server",
         };
 
         string jsonRandomData = JsonSerializer.Serialize(randomData);
@@ -88,14 +88,17 @@ class MyTcpListener
 
           // Parse the received data using JsonNode.
           JsonNode jsonData = JsonNode.Parse(data)!;
-          // Create a value property and set its value equal to the generated random data.
-          jsonData["value"] = num;
 
           // Check and verify the received JSON source property. 
           var sourceProp = jsonData["source"];
 
-          if(string.Equals("C#-server", sourceProp.ToString())){
+          if(string.Equals("cs-server", sourceProp.ToString())){
             Console.WriteLine("source " + sourceProp);
+            jsonData["value"] = num;
+          }
+          else{
+            Console.WriteLine("invalid payload source");
+            jsonData["error"] = "invalid payload source";
           }
 
           // Re-use the current received json data.
