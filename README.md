@@ -5,7 +5,7 @@
 
 In this quick tour, the client will watch data from a C# application through inter-process communication (ipc) using *tcp* with the remote device.
 
-The client will send a *json* payload data { type:"random", source:"cs-server" } to a remote device and should receive a random value from the remote device e.g. { type:"random", source:"cs-server", value: 28 };
+The remote device will send a *json* payload data { type:"random", source:"cs-server" } with the C# application to capture the random value.
 
 ### Remote Device Setup
 
